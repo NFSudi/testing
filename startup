@@ -1,0 +1,31 @@
+Codes to run on Jetson Nano Ubuntu 18.04, just follow the f1tenth official website, its fairly simple: https://f1tenth.readthedocs.io/en/stable/getting_started/software_setup/optional_software_nx.html
+
+Username:nicholas
+Password:nicholas123
+
+# when connected to a USB
+ssh nicholas@nicholas-desktop.local
+sudo nmtui
+
+# it will show up the graphical, go to activate a connection, select the wifi and activate a connection by putting in a password
+
+# check wifi connection by 
+sudo nmcli d
+
+# save wifi ip because sometimes wifi only wants to connect by ip 
+# while still connected
+ifconfig
+# or
+ip addr show dev wlan0
+
+#save the ip for wlan0 then 
+exit
+
+#unplug and reconnect when using same wifi using
+ssh nicholas@<ip-address>
+
+
+
+
+
+
