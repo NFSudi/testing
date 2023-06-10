@@ -1,3 +1,5 @@
+10 June 2023 - finally documenting have been doing since last week
+
 Instructions on Setting Up F1TENTH Jetson
 can be found on https://f1tenth.readthedocs.io/en/stable/getting_started/intro.html
 
@@ -6,3 +8,21 @@ f1tenth was prebuild with given electrical connections
 electronics used:
 VESC
 Lidar LD06
+
+something I did differently from f1tenth is:
+1. Using Jetson Nano
+in the download center, I searched for Jetson Nano Developer Kit SD card image instead
+in result I got ubuntu 18.04 
+Drawbacks: can't install ros2 on the jetson, have to use docker
+
+2. Using Lidar LD06: https://github.com/linorobot/ldlidar/tree/ros2
+I am still figuring out how to integrate to the launch file
+but for now try to git clone and install (if not possible to login try to fork it in your own repository and clone that
+change the usb settings because in f1tenth use special serial_port name
+
+change src/ldlidar/ldlidar.rules
+and change src/ldlidar/src/ldlidar_node.cpp
+
+there is a "TODO" in line 7 put that in there
+
+
