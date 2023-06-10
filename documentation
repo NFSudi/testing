@@ -1,0 +1,8 @@
+Instructions on Setting Up F1TENTH Jetson
+can be found on https://f1tenth.readthedocs.io/en/stable/getting_started/intro.html
+
+f1tenth was prebuild with given electrical connections
+
+electronics used:
+VESC
+Lidar LD06
