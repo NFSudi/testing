@@ -26,3 +26,6 @@ and change src/ldlidar/src/ldlidar_node.cpp
 there is a "TODO" in line 7 put that in there
 
 
+TO DO:
+- get rid of urg node ld action
+- Make URDF file for SLAM Toolbox but unlikely to fix odom to base link
